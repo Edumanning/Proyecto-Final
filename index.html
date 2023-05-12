@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final Eduardo Manning</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/main.js" defer></script>
+</head>
+
+
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header__navbar" class="header__show">
+        <nav class="container__navbar" >
+            <a href="#home" class="navbar__icon">
+                <svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="navbar__icon-img">
+                <g><path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"></path></g>
+            </svg>
+            <span>STORE</span>
+            </a>
+
+            <!-- <ul class="navbar__menu" id="navbarMenu">
+                <li>
+                    <a class="navbar__menu-home" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="navbar__menu-products" href="#products">Products</a>
+                </li>
+            </ul> -->
+
+            <div class="navbar__icons">
+                <i class="bx bx-moon" id="iconTheme"></i>  
+                <i class="bx bxs-dashboard handleIconNavbar" id="iconShowMenu"></i>
+                <i class='bx bxs-cart' >
+                    <span class="amountProducts"></span>
+                </i>                               
+            </div>               
+        </nav>
+    </header>
+
+
+    <!-- home -->
+    <div class="container">
+        <section class="home" id="home">
+        <div class="home__header">
+            <div></div>
+            <div class="home__header-img">
+        <img src="./assets/images/sweater2.png" alt="Imagen" />
+            </div>
+    </div>
+
+    <div class="home__body">
+            <h2 class="home__body-title">New Sweatshirt COLLECTIONS 2022</h2>
+            <p class="home__body-paragragh">
+            Latest arrival of the new Hanes Midweight Crewneck sweatshirt
+            imported from the 2022 series, with a modern design.
+            </p>
+            <p class="home__body-price">$14.00</p>
+            <a href="#products" class="home__body-btn">Show more</a>
+        </div>
+        </section>
+
+<!--FILTROS-->
+
+    <div class="content__filter">
+        <div class="filter filter__active" data-filter="all">
+        <p>Show all</p>
+        <p>Show all products</p>
+    </div>
+        <div class="filter" data-filter=".shirt">
+        <p>Shirt</p>
+    </div>
+        <div class="filter" data-filter=".hoddie">
+            <p>Hoddie</p>
+        </div>
+    <div class="filter" data-filter=".sweater">
+        <p>Sweater</p>
+    </div>
+    </div>
+    <div class="products"></div>
+
+<!--   <section class="filter__buttons">
+        <button>Show All</button>
+        <button>Shirts</button>
+        <button>Hoddies</button>
+        <button>Sweaters</button>
+    </section> -->
+
+<!--products-->
+
+    <div class="products"></div>
+
+<!-- CARRITO-->
+    <div class="cart">
+        <div class="cart__products"></div>
+        <div class="cart__total">
+            <div class="cart__total--info">
+                <span class="info__amount"></span>              
+                <span class="info__total"></span>
+            </div>       
+            
+            <button class="btn btn__buy">Comprar</button>
+        </div>
+
+    </div>
+
+<!-- LOADING -->
+    <div class="content__loader" id="content__loader">
+        <div class="loader" id="loader">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="load__gif">
+            <title>Academlo Logo</title>
+            <g>
+            <g>
+                <path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z"></path>
+                <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"></path>
+            </g>
+            </g>
+            </svg>
+        </div>
+    </div>
+
+<!-- FOOTER -->
+<footer>
+    <section class="content_footer container">
+    <div class="footer_info">
+        <h3 class="footer_info-title">Our information</h3>
+        <ul>
+            <li>
+            <a href="https://www.academlo.com/" target="_blank">Bogotá - Colombia</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer_info">
+        <h3 class="footer_info-title">About Us</h3>
+        <ul>
+            <li><a href="#home">Support Center</a></li>
+            <li><a href="#home">Customer Support</a></li>
+            <li><a href="#home">About Us</a></li>
+            <li><a href="#home">Copy Right</a></li>
+        </ul>
+    </div>
+
+    <div class="footer_info">
+        <h3 class="footer_info-title">Product</h3>
+        <ul>
+            <li><a class="footer_info-link">Hoodies</a></li>
+            <li><a class="footer_info-link">Shirts</a></li>
+            <li><a class="footer_info-link">About Us</a></li>
+            <li><a class="footer_info-link">Sweatshirts</a></li>
+        </ul>
+    </div>
+
+    <div class="footer_info">
+        <h3 class="footer_info-title">Social</h3>
+        <ul class="footer_link-social">
+            <li>
+            <a href="https://www.facebook.com/pedro.andres.712/" target="_blank">
+                <i class="bx bxl-facebook"></i>
+            </a>
+            </li>
+            <li>
+            <a href="https://twitter.com/pedro_andres123" target="_blank">
+                <i class="bx bxl-twitter"></i>
+            </a>
+            </li>
+            <li>
+            <a href="https://www.instagram.com/pedro_lara_x/" target="_blank" >
+                <i class="bx bxl-instagram"></i>
+            </a>
+            </li>
+        </ul>
+    </div>
+    </section>
+    <p>
+    <b>
+        <span class="footer-titles-1">Nombre:</span> <a class="footer-contact-link" href="https://github.com/PedroLara14" target="_blank">Eduardo Manning</a>
+        <span class="footer-titles-2">Correo:</span> <a class="footer-contact-link" href="mailto:brownsgameplays14@gmail.com">edugonzalez001@gmail.com</a>
+        <span class="footer-titles-3">Repositorio:</span>
+        <a class="footer-contact-link" href="https://github.com/PedroLara14/ShoppingCart---Academlo-Gen-26-Vanilla-JS-Project" target="_blank">Click aqui para ir</a></b>
+    </p>
+</footer>
+
+</body>
+</html>
+
